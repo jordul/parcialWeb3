@@ -21,7 +21,7 @@ class App extends Component {
   fetchExercises = async () => {
     try {
       const response = await fetch(
-        "https://geo.ipify.org/api/v1?apiKey=at_GcJ7twwEs9glaNG4t2DqsWFbW7Ej6&ipAddress=" + ipConsulta
+        "https://geo.ipify.org/api/v1?apiKey=clave&ipAddress=" + ipConsulta
       );
       const data = await response.json();
       this.setState({
