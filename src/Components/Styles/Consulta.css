@@ -1,0 +1,81 @@
+:root {
+    --blanco: #ffffff;
+    --grisOscuro: #3D3D3D;
+    --grisClaro:#969696;
+  }
+
+@font-face {
+    font-family: 'rubikbold';
+    src: url('../../Fonts/rubik-bold-webfont.woff2') format('woff2'),
+         url('../../Fonts/rubik-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rubikmedium';
+    src: url('../../Fonts/rubik-medium-webfont.woff2') format('woff2'),
+         url('../../Fonts/rubik-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rubikregular';
+    src: url('../../Fonts/rubik-regular-webfont.woff2') format('woff2'),
+         url('../../Fonts/rubik-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.fondo {
+    width: 1350px;
+    height: 200px;
+    border: none;
+    background: url('../../images/pattern-bg.png') no-repeat;
+    z-index: 0;
+}
+
+.busqueda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    margin-top: 2%;
+    text-align:center;
+    font-family: 'rubikregular';
+    color: var(--blanco);
+}
+
+.Agregar{
+    text-align:left;
+    font-family: 'rubikregular';
+    font-size: 18px;
+    border: none;
+    padding: 12px 105px 12px 105px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.boton{
+    background: var(--grisOscuro);
+    font-family: 'rubikregular';
+    font-size: 18px;
+    border: none;
+    padding: 12px 15px 12px 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: var(--blanco);
+}

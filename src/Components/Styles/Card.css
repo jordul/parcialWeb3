@@ -1,0 +1,59 @@
+:root {
+    --blanco: #ffffff;
+    --grisOscuro: #3D3D3D;
+    --grisClaro:#969696;
+  }
+@font-face {
+    font-family: 'rubikbold';
+    src: url('../../Fonts/rubik-bold-webfont.woff2') format('woff2'),
+         url('../../Fonts/rubik-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'rubikmedium';
+    src: url('../../Fonts/rubik-medium-webfont.woff2') format('woff2'),
+         url('../../Fonts/rubik-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'rubikregular';
+    src: url('../../Fonts/rubik-regular-webfont.woff2') format('woff2'),
+         url('../../Fonts/rubik-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* .card {
+    display: flex;
+    padding: 12px 200px 12px 200px;
+    border: none;
+    border-radius: 8px;
+}
+.card ul{
+    flex-basis: 100%; 
+    justify-content: flex-end;
+    text-decoration: none;
+    display: inline-block;
+}
+.card ul li{
+    flex-basis: 100%; 
+    text-decoration: none;
+    display: inline-block;
+} */
+
+.list-group{
+    display: flex;
+    justify-content: center;
+    margin-top: -4.5%;
+    font-family: 'rubikregular';
+    z-index: 3;
+}
+
+.atributo{
+    font-size: 11px;
+    color: var(--grisClaro);
+}
