@@ -44,13 +44,14 @@
     text-decoration: none;
     display: inline-block;
 } */
-
 .list-group{
     display: flex;
     justify-content: center;
     margin-top: -4.5%;
     font-family: 'rubikregular';
-    z-index: 3;
+}
+.list-group-item{
+    z-index: 20;
 }
 
 .atributo{

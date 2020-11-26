@@ -3,7 +3,7 @@ import Consulta from '../src/Components/Consulta';
 import Card from '../src/Components/Card';
 import Mapa from '../src/Components/Mapa';
 import './App.css'
-let ipConsulta;
+let ipConsulta='-----';
 class App extends Component {
 
   constructor(props) {
@@ -11,8 +11,8 @@ class App extends Component {
     this.state = {
       location: '-----',
       timezone: '-----',
-      lat: '4.6486259',
-      lng: '-74.2478966',
+      lat: '4.6572713',
+      lng: '-74.0929119',
       isp: '-----',
       error: null
     };
@@ -21,7 +21,7 @@ class App extends Component {
   fetchExercises = async () => {
     try {
       const response = await fetch(
-        "https://geo.ipify.org/api/v1?apiKey=clave&ipAddress=" + ipConsulta
+        "https://geo.ipify.org/api/v1?apiKey=at_GcJ7twwEs9glaNG4t2DqsWFbW7Ej6&ipAddress=" + ipConsulta
       );
       const data = await response.json();
       this.setState({
@@ -47,20 +47,21 @@ class App extends Component {
   render() {
     return (
       <div className="componente1">
-        <Consulta
-          onchange={this.getConsulta}
-        />
-        <Card
-          ip={ipConsulta}
-          location={this.state.location}
-          timezone={this.state.timezone}
-          isp={this.state.isp}
-        />
-        <Mapa 
-          lat={this.state.lat}
-          lng={this.state.lng}
-          isp = {this.state.isp}
-        />
+          <Consulta
+            onchange={this.getConsulta}
+          />
+          <Card
+            ip={ipConsulta}
+            location={this.state.location}
+            timezone={this.state.timezone}
+            isp={this.state.isp}
+          />
+          <Mapa
+            lat={this.state.lat}
+            lng={this.state.lng}
+            isp={this.state.isp}
+          />
+
       </div>
     );
   }

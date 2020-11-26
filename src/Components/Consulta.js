@@ -12,7 +12,7 @@ class Consulta extends React.Component {
                         <h1 className='titulo'>IP Address Tracker</h1>
                         <form onSubmit={onchange}>
                             <label >
-                                <input type="text" className='Agregar' name="name" />
+                                <input type="text" className='Agregar' name="name" placeholder='Search for any IP address or domain' />
                             </label>
                             <input type="submit" className='boton' value=">" />
                         </form>

@@ -1,12 +1,15 @@
-import Lo from "leaflet";
+import L from "leaflet";
+import Puntero from '../imagen-puntero/icon-location.svg'
 
-export const iconLocation = Lo.icon({
-  iconUrl: require("../assets/venue_location_icon.svg"),
-  iconRetinaUrl: require("../assets/venue_location_icon.svg"),
+ const iconLocation = L.icon({
+  iconUrl: Puntero,
+  iconRetinaUrl: Puntero,
   iconAnchor: null,
   shadowUrl: null,
   shadowSize: null,
   shadowAnchor: null,
-  iconSize: [35, 35],
+  iconSize: [30, 35],
   className: "leaflet-venue-icon",
 });
+
+export {iconLocation  }

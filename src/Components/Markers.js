@@ -1,6 +1,7 @@
 import React from 'react';
 import {Marker,Popup} from 'react-leaflet';
-import {iconLocation} from './iconLocation';
+import {iconLocation} from './IconLocation';
+
 
 const Markers = (props)=>{
     const {location,isp} = props;
