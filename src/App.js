@@ -31,8 +31,7 @@ class App extends Component {
         timezone: 'UTC'+data.location.timezone,
         location: data.location.city + ', ' + data.location.postalCode
       });
-      console.log('Location: '+this.state.location+' timezone: '+ this.state.timezone + ' lat: '+ this.state.lat + 
-      ' lng: '+ this.state.lng + ' isp: '+ this.state.isp)
+      
     } catch (error) {
       this.setState({ error: error.message });
     }
